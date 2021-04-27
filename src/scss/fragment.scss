@@ -1,0 +1,147 @@
+.fragment {
+  background: #18191D;
+  display: flex;
+  justify-content: center;
+  padding: 83px 0 83px 0;
+
+  .container {
+    display: flex;
+  }
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 59px;
+    color: #fff;
+    max-width: 570px;
+    padding-bottom: 44px;
+  }
+
+  &__subtitle {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    max-width: 500px;
+    position: relative;
+  }
+
+  .block {
+    width: 642px;
+    height: 255px;
+    background: rgb(24, 25, 29);
+    background: linear-gradient(41deg, rgb(24, 25, 29) 44%, rgb(42, 43, 48) 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px;
+    position: relative;
+  }
+
+  .block:nth-child(2) {
+    margin: 0;
+    z-index: 1;
+
+  }
+
+  .container__left {
+    position: relative;
+  }
+
+  &__logo {
+    max-width: 649px;
+    max-height: 716px;
+    transform: translate(-22%, -5%);
+  }
+}
+
+@media (max-width: 376px) {
+  .fragment {
+    display: flex;
+    justify-content: normal;
+    padding: 83px 0 0 0;
+    .container {
+      flex-direction: column;
+
+      .block {
+        width: 351px;
+        height: 190px;
+      }
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 41px;
+      max-width: 308px;
+      margin-left: 18px;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 296px;
+    }
+
+    &__logo {
+      width: 370px;
+      height: 428px;
+      transform: translate(-2%, -22%);
+    }
+  }
+}
+@media (max-width: 1024px){
+  .fragment{
+    .block{
+      width: 580px;
+      height: 255px;
+    }
+    &__logo{
+      max-width: 525px;
+      max-height: 660px;
+      transform: translate(-23%, -2%);
+    }
+  }
+
+}
+@media (max-width: 415px) {
+  .fragment {
+    display: flex;
+    justify-content: normal;
+    padding: 83px 0 0 0;
+    .container {
+      flex-direction: column;
+
+      .block {
+        width: 351px;
+        height: 190px;
+      }
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 41px;
+      max-width: 308px;
+      margin-left: 18px;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 296px;
+    }
+
+    &__logo {
+      width: 370px;
+      height: 428px;
+      transform: translate(-2%, -22%);
+    }
+  }
+}

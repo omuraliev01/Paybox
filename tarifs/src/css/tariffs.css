@@ -1,0 +1,220 @@
+.tariffs {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  margin-top: 145px;
+}
+.tariffs .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.tariffs__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.tariffs__subtitle {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding-bottom: 98px;
+}
+.tariffs .blocks {
+  display: flex;
+  justify-content: center;
+}
+.tariffs .blocks .block__left {
+  width: 470px;
+  padding: 40px 0 55px 0;
+  background: #2A2B31;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tariffs .blocks .block__left:before {
+  position: absolute;
+  content: "";
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  width: 404px;
+  left: 33px;
+  top: 223px;
+}
+.tariffs .blocks .block__left__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  padding-bottom: 29px;
+}
+.tariffs .blocks .block__left__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  padding-bottom: 76px;
+}
+.tariffs .blocks .block__left__ul {
+  position: relative;
+  list-style-type: none;
+}
+.tariffs .blocks .block__left__li {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-align: start;
+  position: relative;
+  padding-left: 96px;
+  padding-top: 20px;
+}
+.tariffs .blocks .block__left__li:before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #505050;
+  top: 27px;
+  left: 75px;
+}
+.tariffs .blocks .block__left__button {
+  background: #FF9900;
+  border-radius: 4px;
+  padding: 23px 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-top: 118px;
+}
+.tariffs .blocks .block__right {
+  width: 470px;
+  padding: 40px 0 55px 0;
+  background: #2A2B31;
+  border-radius: 4px;
+  margin-left: 80px;
+  position: relative;
+}
+.tariffs .blocks .block__right:before {
+  position: absolute;
+  content: "";
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  width: 404px;
+  left: 33px;
+  top: 223px;
+}
+.tariffs .blocks .span {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FF9900;
+}
+.tariffs .descriptions {
+  display: flex;
+  justify-content: center;
+}
+.tariffs .descriptions__description1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150.19%;
+  color: #FFFFFF;
+  max-width: 466px;
+  text-align: start;
+  margin: 70px 45px 50px 0;
+  display: none;
+}
+.tariffs .descriptions__description1:last-child {
+  padding-left: 40px;
+}
+.tariffs .descriptions__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150.19%;
+  color: #FFFFFF;
+  max-width: 466px;
+  text-align: start;
+  margin: 70px 45px 50px 0;
+}
+.tariffs .descriptions__description:last-child {
+  padding-left: 40px;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 376px) {
+  .tariffs {
+    margin-top: 110px;
+  }
+  .tariffs__title {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .tariffs__subtitle {
+    font-size: 16px;
+    padding-bottom: 80px;
+  }
+  .tariffs .descriptions__description1 {
+    display: block;
+    font-size: 10px;
+    margin: 36px 0 50px 22px;
+  }
+  .tariffs .descriptions__description1:last-child {
+    padding-left: 0;
+  }
+  .tariffs .descriptions__description {
+    display: none;
+  }
+  .tariffs .blocks {
+    display: flex;
+    justify-content: end;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    zoom: 1;
+  }
+  .tariffs .blocks .block__right {
+    margin: 0;
+    position: revert;
+    padding: 40px 105px 55px 0;
+  }
+  .tariffs .blocks .block__right:before {
+    display: none;
+  }
+  .tariffs .blocks .block__left__button {
+    padding: 15px 36px;
+    margin: 40px 0 0 35px;
+  }
+  .tariffs .blocks .block__left__title {
+    font-size: 20px;
+    padding: 0 0 8px 0;
+  }
+  .tariffs .blocks .block__left__subtitle {
+    font-size: 16px;
+  }
+  .tariffs .blocks .block__left__li {
+    padding-left: 35px;
+    width: 170px;
+    font-size: 12px;
+  }
+  .tariffs .blocks .block__left__li:before {
+    left: 18px;
+  }
+  .tariffs .blocks .span {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=tariffs.css.map */

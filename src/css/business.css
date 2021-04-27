@@ -1,0 +1,209 @@
+.business {
+  background: #18191D;
+  padding: 43px 0 83px 0;
+  display: flex;
+  justify-content: center;
+}
+.business__logo {
+  padding-left: 1px;
+  width: 541px;
+  height: 620px;
+}
+.business__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+  max-width: 497px;
+  padding-bottom: 44px;
+}
+.business__span {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FF9900;
+}
+.business__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: 550px;
+  margin-left: 100px;
+}
+.business .wave-btn {
+  width: 310px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.8s ease 0s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.business .wave-btn:hover {
+  animation: all 0.8s ease 0.2s;
+  box-shadow: 0 0 40px rgba(255, 153, 0, 0.6);
+}
+.business .wave-btn:hover .wave-btn__waves {
+  top: -50px;
+  transition: 0.8s;
+}
+.business .wave-btn__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+.business .wave-btn__waves {
+  position: absolute;
+  width: 310px;
+  height: 300px;
+  background-color: #FF9900;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  animation: all 0.8s ease 0s;
+}
+.business .wave-btn__waves:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+.business .wave-btn__waves:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  background-color: #18191d;
+  border-radius: 48%;
+  animation: waves 5s infinite linear;
+}
+.business .wave-btn__waves:after {
+  background-color: rgba(24, 25, 29, 0.5);
+  border-radius: 44%;
+  animation: waves 10s infinite linear;
+}
+@keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+.business .container {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .business .container {
+    flex-direction: column;
+  }
+  .business .container__left {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 376px) {
+  .business {
+    background: #18191D;
+    padding: 82px 0 83px 0;
+    flex-direction: column;
+    justify-content: normal;
+  }
+  .business__title {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #fff;
+    max-width: 348px;
+    padding-bottom: 44px;
+    margin-left: 13px;
+  }
+  .business__span {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FF9900;
+  }
+  .business__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    max-width: 331px;
+    margin-left: 15px;
+  }
+  .business__btn {
+    margin-left: 52px;
+  }
+  .business .wave-btn {
+    margin-left: 20px;
+  }
+  .business__logo {
+    max-width: 314px;
+    max-height: 360px;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 415px) {
+  .business {
+    background: #18191D;
+    padding: 82px 0 83px 0;
+    flex-direction: column;
+    justify-content: normal;
+  }
+  .business__title {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #fff;
+    max-width: 348px;
+    padding-bottom: 44px;
+    margin-left: 13px;
+  }
+  .business__span {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FF9900;
+  }
+  .business__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    max-width: 331px;
+    margin-left: 38px;
+  }
+  .business__btn {
+    margin-left: 52px;
+  }
+  .business__logo {
+    max-width: 314px;
+    max-height: 360px;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=business.css.map */

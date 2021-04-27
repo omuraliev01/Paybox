@@ -1,0 +1,110 @@
+.aboutUs {
+  padding-top: 172px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+.aboutUs .container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+}
+.aboutUs .container__text {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.aboutUs .container .image {
+  width: 625px;
+  height: 604px;
+}
+.aboutUs__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+.aboutUs__title:nth-child(4) {
+  padding-top: 120px;
+}
+.aboutUs__subtitle {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 570px;
+  padding-top: 50px;
+}
+.aboutUs__subtitle:nth-child(3) {
+  padding-top: 30px;
+}
+.aboutUs__subtitle:last-child {
+  padding: 0;
+}
+.aboutUs__subtitle-img {
+  display: flex;
+  padding-top: 50px;
+}
+.aboutUs__subtitle-img:last-child {
+  padding-top: 30px;
+}
+.aboutUs__img {
+  width: 29px;
+  height: 43px;
+  margin: 10px 27px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .aboutUs__subtitle {
+    font-size: 15px;
+  }
+  .aboutUs .row {
+    display: flex;
+  }
+}
+@media (max-width: 376px) {
+  .aboutUs {
+    padding-top: 20px;
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 375px;
+    margin-left: 20px;
+  }
+  .aboutUs .container .image {
+    position: relative;
+    width: 350px;
+    height: 315px;
+  }
+  .aboutUs .container .image:before {
+    position: absolute;
+    content: "";
+    background: url("../img/Group 176.png");
+  }
+  .aboutUs .container .row {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+  }
+  .aboutUs__title {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  .aboutUs__subtitle {
+    padding-top: 0;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 330px;
+    line-height: 160.19%;
+  }
+  .aboutUs__subtitle-img {
+    padding-top: 0;
+  }
+  .aboutUs__img {
+    width: 19px;
+    height: 29px;
+    margin: 0 15px 0 0;
+  }
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/scss/style.scss">
+</head>
+<body>
+
+<header id="header" class="header">
+    <div class="container">
+        <a href="../index.html"><img src="src/img/img.svg" alt="" class="header__logo"></a>
+        <p class="header__subtitle">Excepteur sint occaecat cupidatat non proident</p>
+        <ul class="header__ul">
+            <li>Документация</li>
+            <li><a href="../aboutUS/index.html">О нас</a></li>
+            <li><a href="../tarifs/index.html">Тарифы</a></li>
+            <li>
+                <a href="#" class="a">
+                    <button class="header__button">Вход</button>
+                </a>
+            </li>
+            <li>Регистрация</li>
+        </ul>
+        <div class="header__burger">
+            <span class="burger__span"></span>
+        </div>
+    </div>
+</header>
+<section class="platform">
+    <div class="container">
+        <div class="container-left">
+            <h2 class="container-left__title">API справочник</h2>
+            <div class="container-flex">
+                <div class="container-column">
+                    <a href="../Acquaintance/index.html"><p class="container-left__subtitle">Знакомство</p></a>
+                    <a href="../startJob/index.html"><p class="container-left__subtitle"><span
+                            class="container-left__subtitle__span">Начало работы</span></p></a>
+                </div>
+                <div class="container-column">
+                <a href="../API/index.html"><p class="container-left__subtitle">API клиенты</p></a>
+                <a href=""><p class="container-left__subtitle">Доступные валюты</p></a>
+                </div>
+                </div>
+        </div>
+        <div class="container-right">
+            <h1 class="container-right__title">Начало работы</h1>
+            <p class="container-right__subtitle">Дружественная к разработчикам платформа Biwse позволяет с легкостью
+                создавать удивительные приложения или интегрировать Biwse API в существующий проект. В этой статье вы
+                пройдете от регистрации до рабочего решения меньше чем за 5 минут.</p>
+            <h1 class="container-right__title2" style="padding: 30px 0 10px 0">Шаг 1: Панель управления</h1>
+            <p class="container-right__subtitle">После регистрации вашего аккаунта вы можете создать новое приложение.
+                Зайдите в панель управления и создайте новое приложение (или перейдите в уже существующее). Затем
+                создайте кошельки для криптовалют которые вы хотите принимать в вашем проекте</p>
+            <h1 class="container-right__title2" style="padding: 30px 0 10px 0">Шаг 2: API токен</h1>
+            <p class="container-right__subtitle">Приложения содержат кошельки криптовалют к которым вы можете получить
+                доступ через API. Вы можете создавать отдельное приложение для каждого вашего проекта. Токены API
+                относятся к конкретному приложению, это позволяет безопаснее и проще управлять разными проектами.</p>
+            <p class="container-right__subtitle" style="padding-top: 45px">Создайте новый API токен в настройках
+                приложения.</p>
+            <h1 class="container-right__title2"
+                style=" border-left: 10px inset #FF9900; height: 118px; padding: 20px 0 0 30px ">Примечание
+                <p class="container-right__subtitle" style="padding-top: 10px">Сохраните токен в безопасном месте, он
+                    позволяет выводить средства из кошельков.</p>
+
+            </h1>
+            <h1 class="container-right__title2" style="padding: 30px 0 10px 0">Шаг 3: Страница оплаты</h1>
+            <p class="container-right__subtitle">Теперь с помощью API токена вы можете создать страницу оплаты: В личном
+                кабинете вы можете получить токен доступа.</p>
+
+            <div class="block">
+                <p class="block__code">curl -X POST <span style="color: #FFFFFF">\</span></p>
+                <p class="block__code">-H <span class="block__code2">"Content-Type: application/json" </span><span
+                        style="color: #FFFFFF">\</span></p>
+                <p class="block__code">-H <span class="block__code2">"Accept: application/json" </span><span
+                        style="color: #FFFFFF">\</span></p>
+                <p class="block__code">-H <span class="block__code2">"Authorization: Bearer YOUR_TOKEN" </span><span
+                        style="color: #FFFFFF">\</span></p>
+                <p class="block__code">https://api.biwse.com/v1/app/YOUR_APP_ID/invoice</p>
+                <p class="block__code">-d <span class="block__code2">'{ "amount": 0.0001 }'  </span><span
+                        style="color: #FFFFFF">\</span></p>
+                <p class="block__code3"># Response:</p>
+                <p class="block__code3">
+                    #{"status":true,"id":"invoice_id...","url":"https://biwse.com/invoice?id=invoice_id..."}</p>
+            </div>
+            <p class="container-right__subtitle" style="padding: 45px 0 50px 0">Вы можете посетить ссылку которая
+                находится в ответе сервера и убедится
+                что страница оплаты готова к работе!</p>
+
+            <h1 class="container-right__title2" style="font-size: 25px;">Что дальше?</h1>
+            <a href="#"><p class="container-right__link2">Ознакомьтесь с API документацией</p></a>
+            <a href="#"><p class="container-right__link">Клиентские библиотеки API</p></a>
+
+
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <h1 class="title">меню</h1>
+
+    <div class="container">
+        <div class="block">
+            <h2 class="footer__title">О компании</h2>
+            <img src="./src/img/img.svg" alt="" class="footer__logo">
+            <p class="footer__text1">Advanced - команда разработчиков работает с криптовалютами в области финансовых
+                технологий </p>
+            <p class="footer__text1">Политика конфиденциальности </p>
+        </div>
+        <div class="block">
+            <h2 class="footer__title">Навигация по сайту</h2>
+            <a href="../index.html"><p class="footer__text">Главная</p></a>
+            <p class="footer__text">Документация</p>
+            <a href="../aboutUS/index.html"><p class="footer__text">О компании </p></a>
+            <a href="../tarifs/index.html"><p class="footer__text">Тарифы</p></a>
+            <p class="footer__text">Вход в личный кабинет</p>
+        </div>
+        <div class="block">
+            <h2 class="footer__title">СВяжитесь с нами</h2>
+            <div class="block__icon">
+                <img src="./src/img/footer/Vector%20(14).svg" alt="">
+                <p class="footer__text" style="margin-left: 25px; margin-top: 10px">+7 (123) 123 456 789</p>
+            </div>
+            <div class="block__icon">
+                <img src="./src/img/footer/Group%204.svg" alt="">
+                <p class="footer__text" style="margin-left: 25px; margin-top: 10px">Info@andancer.com</p>
+            </div>
+            <div class="block__icon">
+                <div class="mini__block">
+                    <img src="./src/img/footer/Vector%20(15).svg" alt="" class="icon">
+                </div>
+                <div class="mini__block">
+                    <img src="./src/img/footer/Vector%20(16).svg" alt="" class="icon">
+                </div>
+                <div class="mini__block">
+                    <img src="./src/img/footer/Vector%20(17).svg" alt="" class="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#header" class="up-arrow">
+        <img src="./src/img/up-arrow.svg" alt="" class="up-arrow__img">
+    </a>
+</footer>
+
+
+<script src="src/js/jquery.js"></script>
+<script src="src/js/style.js"></script>
+</body>
+</html>

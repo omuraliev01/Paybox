@@ -1,0 +1,109 @@
+.partners {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 140px;
+}
+.partners .container {
+  text-align: center;
+  width: 785px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.partners__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+.partners__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 160.19%;
+  color: #FFFFFF;
+  padding-bottom: 35px;
+}
+.partners .logo {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 63px;
+}
+.partners a {
+  display: flex;
+  justify-content: center;
+}
+.partners .wave-btn {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  border-radius: 6px;
+  transition: all 0.8s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+.partners .wave-btn:hover .wave-btn__waves {
+  top: -50px;
+  transition: 0.8s;
+}
+.partners .wave-btn__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+.partners .wave-btn__waves {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-color: #FF9900;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  animation: all 0.8s ease 0s;
+}
+.partners .wave-btn__waves:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+.partners .wave-btn__waves:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  background-color: #000;
+  border-radius: 48%;
+  animation: waves 5s infinite linear;
+}
+.partners .wave-btn__waves:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 44%;
+  animation: waves 10s infinite linear;
+}
+@keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
